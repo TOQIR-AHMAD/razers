@@ -100,7 +100,8 @@ footer ul li:not(.title) {
 }
 @media screen and (max-width: 50em) {
   .razer-edge {
-    background-image: url("");
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/631eeeb90684b54d5ffefc45e8511ac4/razer-blackshark-v2-hyperspeed-homepage-desktop2x.webp");
+
   }
   .razer-blade {
     background-image: url("https://assets2.razerzone.com/images/pnx.assets/631eeeb90684b54d5ffefc45e8511ac4/back-to-school-homepage-desktop2x.webp");
