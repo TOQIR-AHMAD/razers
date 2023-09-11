@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Razer;
+  src: url("/Fonts/RazerF5-Reg.otf");
+}
+
+html,
+body,
+#root {
+  @apply h-full;
+}
+
+.nav-item {
+  @apply cursor-pointer hover:text-primary-100 transition-colors duration-300;
+}
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.razer-edge {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/631eeeb90684b54d5ffefc45e8511ac4/razer-blackshark-v2-hyperspeed-homepage-desktop2x.webp");
+}
+.razer-blade {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/631eeeb90684b54d5ffefc45e8511ac4/back-to-school-homepage-desktop2x.webp");
+ 
+}
+.razer-hammerhead {
+  background-image: url("../public/Backgrounds/razer-blade-14-2023-homepage-desktop2x\ \(3\).webp");
+}
+.new-year-special {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/razercon2023-950x580-desktop.webp");
+}
+.razer-enki-pro {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/b4f700532670d0f8bf3609a60d24bf8e/razer-kitsune-950x580-desktop.webp");
+}
+.razer-naga {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/2fb5601db7a84213129e2f26d31f050f/mercury-blade16-blade18-b-950x580-desktop.webp");
+}
+.razerstore-orlando {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/kishi-v2-pro-for-android-b-950x580-desktop.webp");
+}
+.razer-leviathan {
+  background-image: url("../public/Backgrounds/enkipro-lamborghini-b-desktop.jpg");
+}
+.choose-your-blade {
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/kishi-v2-pro-for-android-b-950x580-desktop.webp");
+}
+
+.title {
+  @apply text-primary-100 py-4 md:py-0;
+}
+footer div:has(> ul > .title) {
+  @apply relative md:block flex items-center justify-between border-b-[1px] border-b-primary-200 md:border-none;
+}
+footer ul,
+footer ul > div {
+  @apply flex flex-col gap-2;
+}
+footer ul li:not(.title) {
+  @apply hover:text-primary-100 hover:underline cursor-pointer transition-colors w-fit;
+}
+.mobile-nav-item {
+  @apply border-b-2 border-b-primary-200 py-4;
+}
+.mobile-nav-item:not(:has(> p)) {
+  @apply hover:text-primary-100 cursor-pointer transition-colors;
+}
+.dropdown::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  top: -0.5rem;
+  left: 85%;
+  right: 1rem;
+  height: 1rem;
+  aspect-ratio: 1;
+  rotate: 45deg;
+  @apply bg-primary-800 border-t-2 border-l-2 border-primary-200;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer ul > li:not(:is(.title)) {
+    @apply hidden;
+  }
+  footer ul > div {
+    @apply pb-4;
+  }
+}
+@media screen and (max-width: 50em) {
+  .razer-edge {
+    background-image: url("");
+  }
+  .razer-blade {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/631eeeb90684b54d5ffefc45e8511ac4/back-to-school-homepage-desktop2x.webp");
+   
+  }
+  .razer-hammerhead {
+    background-image: url("../public/Backgrounds/razer-blade-14-2023-homepage-desktop2x\ \(3\).webp");
+  }
+  .new-year-special {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/razercon2023-950x580-desktop.webp");
+  }
+  .razer-enki-pro {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/b4f700532670d0f8bf3609a60d24bf8e/razer-kitsune-950x580-desktop.webp");
+  }
+  .razer-naga {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/2fb5601db7a84213129e2f26d31f050f/mercury-blade16-blade18-b-950x580-desktop.webp");
+  }
+  .razerstore-orlando {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/kishi-v2-pro-for-android-b-950x580-desktop.webp");
+  }
+  .razer-leviathan {
+    background-image: url("../public/Backgrounds/enkipro-lamborghini-b-desktop.jpg");
+  }
+  .choose-your-blade {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/kishi-v2-pro-for-android-b-950x580-desktop.webp");
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .fork-me {
+    @apply shadow-md shadow-primary-800 hover:after:bg-primary-100 hover:before:bg-primary-100 transition-colors;
+  }
+  .fork-me::after,
+  .fork-me::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: -20%;
+    z-index: -10;
+    @apply bg-razer-green;
+  }
+  
+}
+/* 
+* {
+  outline: 1px solid red;
+} */
