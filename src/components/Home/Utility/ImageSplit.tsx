@@ -1,5 +1,3 @@
-import { Children } from "react"
-import ImageFull from "./ImageFull"
 
 type Props = {
   children: JSX.Element

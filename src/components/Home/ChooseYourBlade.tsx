@@ -7,7 +7,10 @@ function ChooseYourBlade() {
         product="choose-your-blade"
         title="RAZER EDGE"
         subtitle="THE ULTIMATE ANDROID GAMING HANDHELD"
-        links={["Learn More", "Buy"]}
+        links={[
+          { text: "Learn More", url: "/edgelearn" },
+          { text: "Buy", url: "/edgebuy" },
+        ]}
         isSmallGrid
       />
     </div>

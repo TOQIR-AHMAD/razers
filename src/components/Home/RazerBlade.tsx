@@ -1,4 +1,4 @@
-import ImageFull from "./Utility/ImageFull"
+import ImageFull from "./Utility/ImageFull";
 
 function RazerBlade() {
   return (
@@ -7,10 +7,12 @@ function RazerBlade() {
         product="razer-blade"
         title="SCHOOL THE COMPETITION"
         subtitle="ENJOY EXCLUSIVE EDUCATION PRICING"
-        links={["SHOP NOW"]}
+        links={[{ text: "SHOP NOW", url: "/schoolshop" }]}
+        
       />
+      
     </div>
-  )
+  );
 }
 
-export default RazerBlade
+export default RazerBlade;

@@ -1,4 +1,4 @@
-import ImageFull from "./Utility/ImageFull"
+import ImageFull from "./Utility/ImageFull";
 
 function RazerNaga() {
   return (
@@ -7,11 +7,14 @@ function RazerNaga() {
         product="razer-naga"
         title="NEW RAZER BLADE 16 & 18 MERCURY"
         subtitle="PERFORMACE REIMAGINED"
-        links={["RAZER BLADE 16", "RAZER BLADE 18"]}
+        links={[
+          { text: "Learn More", url: "/mercurylearn" },
+          { text: "Buy", url: "/mercurybuy" },
+        ]}
         isSmallGrid
       />
     </div>
-  )
+  );
 }
 
-export default RazerNaga
+export default RazerNaga;

@@ -14,6 +14,7 @@ import { NavbarContext } from "../../../context/NavbarProvider"
 import Notification from "../Notification/Notification"
 import SearchBox from "../Inputs/SearchBox"
 import { VscClose } from "react-icons/vsc"
+import { Link, NavLink } from "react-router-dom"
 
 function Navbar() {
   const { cart, setCart } = useContext(CartContext)
@@ -41,10 +42,10 @@ function Navbar() {
               <SearchBox />
               <div className="m-4">
                 <ul className="flex flex-col text-base">
-                  <li className="mobile-nav-item flex items-center gap-2">
-                    <p>PC</p>
+                  <NavLink className="mobile-nav-item flex items-center gap-2" to={"PC"}>
+                     <Link to="PC">PC</Link>
                     <FaAngleRight className="text-razer-green" />
-                  </li>
+                  </NavLink>
                   <li className="mobile-nav-item">Console</li>
                   <li className="mobile-nav-item">Mobile</li>
                   <li className="mobile-nav-item">Lifestyle</li>
@@ -58,20 +59,22 @@ function Navbar() {
           </nav>
         )}
         <div className="md:ml-auto cursor-pointer z-20">
-          <img src="/Misc/razer-logo.svg" alt="Razer Logo" className="w-8" />
+        <Link to="/">
+            <img src="/Misc/razer-logo.svg" alt="Razer Logo" className="w-8" />
+          </Link>
         </div>
         {search ? (
           <SearchBox />
         ) : (
           <ul className="hidden md:flex items-center gap-4 lg:gap-8 xl:gap-16">
-            <li className="nav-item">PC</li>
-            <li className="nav-item">Console</li>
+            <NavLink className="nav-item" to={"/pc"}>PC</NavLink>
+            <NavLink className="nav-item" to={"/console"} >Console</NavLink>
             <li className="nav-item">Mobile</li>
             <li className="nav-item">Lifestyle</li>
             <li className="nav-item">Services</li>
             <li className="nav-item">Commuinity</li>
             <li className="nav-item">Support</li>
-            <li className="nav-item">Store</li>
+            <Link className="nav-item" to="/shopings">Store</Link>
             <li className="text-primary-400">
               <AiOutlineSearch
                 className="nav-item scale-150"
@@ -91,12 +94,12 @@ function Navbar() {
             />
           ) : (
             <AiOutlineShoppingCart
-              className="nav-item scale-150"
+              className="nav-item scale-150 "
               onClick={() => setCart(!cart)}
             />
           )}
           {cart && (
-            <div className="dropdown md:text-base absolute z-10 flex flex-col px-4 bg-primary-800 py-2 w-60 -left-[13.25rem] md:-left-52 top-[200%] border-2 border-primary-200 rounded-lg">
+            <div className=" dropdown md:text-base absolute z-10 flex flex-col px-4 bg-primary-800 py-2 w-60 -left-[13.25rem] md:-left-52 top-[200%] border-2 border-primary-200 rounded-lg">
               <div>
                 <div className="text-xs py-4 text-center">
                   <p>Your Cart is Empty</p>

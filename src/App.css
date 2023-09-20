@@ -47,7 +47,46 @@ body,
   background-image: url("../public/Backgrounds/enkipro-lamborghini-b-desktop.jpg");
 }
 .choose-your-blade {
-  background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/kishi-v2-pro-for-android-b-950x580-desktop.webp");
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/made-for-the-hardcore-b-950x580-desktop.webp");
+}
+.pinks{
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/cd2d636f26bd91dd99923c71b9e84a83/complete-your-setup-campaign-category-banner-desktop.jpg");
+}
+
+.console{
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/585a94a7b6316023e5ca412a1896d43e/razer-kitsune-desktop-banner.jpg");
+}
+
+.consolevideo{
+  background-image: url("//assets2.razerzone.com/images/pnx.assets/95b9b2843ebbf5e0dbed114521d0f475/playstaions-category-video.mp4");
+}
+.sonic{
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/0e064526124df6127811074622ca706f/sonic-the-hedgehog-xbox-controller-and-charging-stand-1920x700-desktop.jpg");
+}
+.gameset{
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/cd8c66be4b03c7637164d056fd453195/gamesetmatch-category-1920x700-desktop.jpg");
+}
+.connect{
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/1f2c6dbd38e9414c6ed618b0ac283295/connect-compete-conquer-category-2023-1920x700-desktop.jpg");
+}
+.memory{
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/58583518f7e409c23105ab1768d42eea/noise-isolating-earcups-500x500.webp");
+}
+
+.thx{
+  background-image: url("https://assets2.razerzone.com/images/pnx.assets/58583518f7e409c23105ab1768d42eea/thx-spatial-audio-500x500.webp");
+}
+.razer-cart{
+  background-image: url("https://assets3.razerzone.com/XIDB-uoPhS2wYxXtCi6SZPe8qRo=/767x511/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhad%2Fh96%2F9539343515678%2F230614-blade14-p95-mercury-1500x1000-1.jpg");
+}
+.girl{
+  background-image: url("//assets2.razerzone.com/images/pnx.assets/b612ba6608b91e74f4a331ab45cbd695/razercon-2023-content-creation.webp");
+}
+.razerconimg{
+  background-image: url("//assets2.razerzone.com/images/pnx.assets/b612ba6608b91e74f4a331ab45cbd695/razercon-2023-battlestation.webp");
+}
+.console1{
+  background-image: url("//assets2.razerzone.com/images/pnx.assets/34f38c1aec0f19f53738e7153bcf26ce/razer-kitsune-chroma-desktop.webp");
 }
 
 .title {
@@ -126,9 +165,11 @@ footer ul li:not(.title) {
     background-image: url("../public/Backgrounds/enkipro-lamborghini-b-desktop.jpg");
   }
   .choose-your-blade {
-    background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/kishi-v2-pro-for-android-b-950x580-desktop.webp");
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/made-for-the-hardcore-b-950x580-desktop.webp");
   }
 }
+
+
 
 @media only screen and (min-width: 1024px) {
   .fork-me {
@@ -145,6 +186,7 @@ footer ul li:not(.title) {
   }
   
 }
+
 /* 
 * {
   outline: 1px solid red;

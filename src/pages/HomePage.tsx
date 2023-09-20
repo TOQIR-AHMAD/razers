@@ -1,13 +1,13 @@
-import ChooseYourBlade from "../components/Home/ChooseYourBlade"
-import NewYearSpecial from "../components/Home/NewYearSpecial"
-import RazerBlade from "../components/Home/RazerBlade"
-import RazerEdge from "../components/Home/RazerEdge"
-import RazerEnkiPro from "../components/Home/RazerEnkiPro"
-import RazerHammerHead from "../components/Home/RazerHammerhead"
-import RazerLeviathan from "../components/Home/RazerLeviathan"
-import RazerNaga from "../components/Home/RazerNaga"
-import RazerStoreOrlando from "../components/Home/RazerStoreOrlando"
-import ImageSplit from "../components/Home/Utility/ImageSplit"
+import ChooseYourBlade from "../components/Home/ChooseYourBlade";
+import NewYearSpecial from "../components/Home/NewYearSpecial";
+import RazerBlade from "../components/Home/RazerBlade";
+import RazerEdge from "../components/Home/RazerEdge";
+import RazerEnkiPro from "../components/Home/RazerEnkiPro";
+import RazerHammerHead from "../components/Home/RazerHammerhead";
+import RazerLeviathan from "../components/Home/RazerLeviathan";
+import RazerNaga from "../components/Home/RazerNaga";
+import RazerStoreOrlando from "../components/Home/RazerStoreOrlando";
+import ImageSplit from "../components/Home/Utility/ImageSplit";
 
 function HomePage() {
   return (
@@ -34,7 +34,7 @@ function HomePage() {
         </>
       </ImageSplit>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

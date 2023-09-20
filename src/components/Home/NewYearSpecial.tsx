@@ -1,4 +1,4 @@
-import ImageFull from "./Utility/ImageFull"
+import ImageFull from "./Utility/ImageFull";
 
 function NewYearSpecial() {
   return (
@@ -7,11 +7,11 @@ function NewYearSpecial() {
         product="new-year-special"
         title="RAZERCON 2023"
         subtitle="A DIGITAL CELEBRATION FOR GAMERS. BY GAMERS"
-        links={["Shop Now"]}
+        links={[{ text: "SHOP NOW", url: "/razerconshop" }]}
         isSmallGrid
       />
     </div>
-  )
+  );
 }
 
-export default NewYearSpecial
+export default NewYearSpecial;

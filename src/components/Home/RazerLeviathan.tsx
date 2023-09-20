@@ -1,4 +1,4 @@
-import ImageFull from "./Utility/ImageFull"
+import ImageFull from "./Utility/ImageFull";
 
 function RazerLeviathan() {
   return (
@@ -7,11 +7,14 @@ function RazerLeviathan() {
         product="razer-leviathan"
         title="RAZER ENKI PRO"
         subtitle={`"AUTOMOBILE LAMBORGHINI EDITION`}
-        links={["Learn More", "Buy"]}
+        links={[
+          { text: "Learn More", url: "/enkilearn" },
+          { text: "Buy", url: "/enkibuy" },
+        ]}
         isSmallGrid
       />
     </div>
-  )
+  );
 }
 
-export default RazerLeviathan
+export default RazerLeviathan;

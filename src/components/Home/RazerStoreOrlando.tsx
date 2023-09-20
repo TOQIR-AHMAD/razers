@@ -7,7 +7,10 @@ function RazerStoreOrlando() {
         product="razerstore-orlando"
         title="RAZER KISHI V2 PRO"
         subtitle="MOBILE GAMING IS NOW HARDCORE"
-        links={["Learn More", "Buy"]}
+        links={[
+          { text: "Learn More", url: "/kishilearn" },
+          { text: "Buy", url: "/kishibuy" },
+        ]}
         isSmallGrid
       />
     </div>

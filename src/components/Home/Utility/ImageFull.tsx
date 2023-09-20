@@ -1,15 +1,16 @@
-import { FaAngleRight } from "react-icons/fa"
-import useCountdown from "../../../hooks/useCountdown"
+import React from "react";
+import { FaAngleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 type Props = {
-  product: string
-  timer?: string
-  title: string
-  subtitle: string
-  links: string[]
-  isSmallGrid?: boolean
-  label?: JSX.Element
-}
+  product: string;
+  timer?: string;
+  title: string;
+  subtitle: string;
+  links: { text: string; url: string }[]; // Updated links prop to an array of objects
+  isSmallGrid?: boolean;
+  label?: JSX.Element;
+};
 
 function ImageFull({
   product,
@@ -20,9 +21,6 @@ function ImageFull({
   isSmallGrid,
   label,
 }: Props) {
-  // Gets Date of 1 March 2023
-  const date = new Date(2023, 2, 1).getTime()
-  const [days, hours, minutes, seconds] = useCountdown(date)
   return (
     <div className="flex justify-center">
       <div
@@ -48,33 +46,20 @@ function ImageFull({
               {subtitle}
             </h3>
           </div>
-          {/* Timer is Optional */}
-          {timer && (
-            <div className="timer mt-1">
-              <div className="flex gap-1 uppercase text-3xl font-bold">
-                <p>{days}</p>
-                <p>:</p>
-                <p>{hours}</p>
-                <p>:</p>
-                <p>{minutes}</p>
-                <p>:</p>
-                <p>{seconds}</p>
-              </div>
-            </div>
-          )}
           <div className="links flex gap-8 mt-4">
             {links.map((link, index) => (
-              <div
+              <Link
+                to={link.url}
                 className={`flex items-center hover:underline cursor-pointer ${
                   isSmallGrid ? "" : "md:text-xl"
                 }`}
                 key={index}
               >
-                <p className="opacity-90">{link}</p>
+                <p className="opacity-90">{link.text}</p>
                 <div className="text-razer-green">
                   <FaAngleRight />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -85,7 +70,7 @@ function ImageFull({
         } overflow-hidden w-full`}
       ></div>
     </div>
-  )
+  );
 }
 
-export default ImageFull
+export default ImageFull;
