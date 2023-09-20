@@ -113,7 +113,7 @@ function PC() {
         product="pinks"
         title=" COMPLETE YOUR SETUP"
         subtitle="A COLOR FOR EVERY STYLE"
-        links={["Learn More"]}
+        links={[]}
         isSmallGrid
       />
       <CardDetails

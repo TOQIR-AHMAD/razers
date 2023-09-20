@@ -26,8 +26,16 @@ import EnkiBuy from "./components/UiComponents/ItemsDetails/EnkiBuy";
 import EdgeBuy from "./components/UiComponents/ItemsDetails/EdgeBuy";
 import EdgeLearn from "./components/UiComponents/ItemsDetails/EdgeLearn";
 import Shop from "./pages/Shop";
+import { useState } from "react";
+import CartItem from "./components/Home/Utility/CartItem";
 
 function App() {
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+
+  // Function to add the product to the cart
+  const addToCart = (item: CartItem) => {
+    setCartItems([...cartItems, item]);
+  };
   return (
     <div className="bg-primary-900 text-primary-300 font-primary text-primary min-h-[200vh]">
       <Router>
@@ -38,6 +46,7 @@ function App() {
           <Route path="/Console" element={<Console />} />
           <Route path="/cart" element={<ProductCard />} />
           <Route path="/shopings" element={<Shop />} />
+          
           
 
           {/* route for buy and learn more */}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import CardDetails from "../components/UiComponents/Card/CardDetails";
 import ImageFull from "../components/Home/Utility/ImageFull";
 import Card from "../components/UiComponents/Card/Card";
@@ -25,8 +25,9 @@ function Console() {
           product={"console"}
           title={"RAZER KITSUNE"}
           subtitle={"All-Button Optical Arcade Controller for PS5™ and PC"}
-          links={["learn More"]}
-        ></ImageFull>
+          links={[]}
+          
+        />
         {videoPlayed && (
           <video autoPlay muted>
             <source
@@ -69,7 +70,7 @@ function Console() {
             subtitle={
               "Officially Licensed Xbox Controller and Quick Charging Stand"
             }
-            links={["Learn More"]}
+            links={[]}
           ></ImageFull>
           <div className=" lg:flex justify-center gap-8 py-6 ">
             <CardTwo
@@ -95,7 +96,7 @@ function Console() {
             subtitle={
               "Get more colorful companions to match your Xbox Wireless Controller"
             }
-            links={["Explore your desired color combo"]}
+            links={[]}
           ></ImageFull>
           <ImageFull
             product={"connect"}
@@ -103,7 +104,7 @@ function Console() {
             subtitle={
               "Conquer the competition on PlayStation or Xbox with our latest game controllers"
             }
-            links={["Learn More"]}
+            links={[]}
           ></ImageFull>
             <div className=" container mx-auto lg:flex justify-around py-8 ">
                      <Card
