@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import CardTwo from "../Card/CardTwo";
-import Shop from "../../../pages/Shop"; 
+import Shop from "../../../pages/Shop";
 
 const KitsuneBuy: React.FC = () => {
-  const [cartItems, setCartItems] = useState<{ title: string; price: number }[]>(
-    []
-  );
+  const [cartItems, setCartItems] = useState<
+    { title: string; price: number }[]
+  >([]);
   const [showCart, setShowCart] = useState(false);
 
   const addToCart = (title: string, price: number) => {
@@ -47,8 +46,8 @@ const KitsuneBuy: React.FC = () => {
             <button
               className="border rounded-sm py-6 my-2 px-7 cursor-pointer text-2xl hover:text-white"
               onClick={() => {
-                addToCart("Razer Kitsune - $100", 100); 
-                setShowCart(true); 
+                addToCart("Razer Kitsune - $100", 100);
+                setShowCart(true);
               }}
             >
               Add to Cart ($100)
@@ -56,8 +55,8 @@ const KitsuneBuy: React.FC = () => {
             <button
               className="border rounded-sm py-6 my-2 px-7 cursor-pointer text-2xl hover:text-slate-600"
               onClick={() => {
-                addToCart("Razer Kitsune - $399", 399); 
-                setShowCart(true); 
+                addToCart("Razer Kitsune - $399", 399);
+                setShowCart(true);
               }}
             >
               Add to Cart ($399)
@@ -65,7 +64,15 @@ const KitsuneBuy: React.FC = () => {
           </div>
         </div>
       </div>
-      {showCart && <Shop cartItems={cartItems} removeFromCart={removeFromCart} title={""} price={0} imageUrl={""} />}
+      {showCart && (
+        <Shop
+          cartItems={cartItems}
+          removeFromCart={removeFromCart}
+          title={""}
+          price={0}
+          imageUrl={""}
+        />
+      )}
     </div>
   );
 };
